@@ -1,127 +1,127 @@
 {
-    "inputs": [
-        {
-            "id": "UI5MinVersion1.65.0",
-            "type": "command",
-            "command": "sap.ux.appGenerator.ui5Version",
-            "args": {
-                "minUI5Version": "1.65.0"
-            }
-        }
-    ],
-    "configurations": [
-        {
-            "name": "zworklistpo-config1",
-            "cwd": "${workspaceFolder}/zworklistpo",
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npx",
-            "args": [
-                "--open",
-                "index.html",
-                "--config",
-                "ui5-mock.yaml"
-            ],
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "outputCapture": "std",
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zworklistpo\"}",
-                "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"S4H1709\",\"path\":\"/sap\"}]",
-                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false&sap-ui-support=true"
-            }
-        },
-        {
-            "name": "Start bussinesspartner",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npx",
-            "cwd": "${workspaceFolder}/bussinesspartner",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--open",
-                "test/flpSandbox.html#bpbussinesspartner-display"
-            ],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "outputCapture": "std",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/bussinesspartner\"}"
-            }
-        },
-        {
-            "name": "Start bussinesspartner Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/bussinesspartner",
-            "runtimeExecutable": "npx",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--config",
-                "./ui5-mock.yaml",
-                "--open",
-                "test/flpSandbox.html#bpbussinesspartner-display"
-            ],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "outputCapture": "std",
-            "port": 9229,
-            "env": {
-                "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/bussinesspartner\"}"
-            }
-        },
-        {
-            "name": "Start bussinesspartner Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/bussinesspartner",
-            "runtimeExecutable": "npx",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--config",
-                "./ui5-local.yaml",
-                "--open",
-                "test/flpSandbox.html#bpbussinesspartner-display"
-            ],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "outputCapture": "std",
-            "port": 9229,
-            "env": {
-                "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/bussinesspartner\"}"
-            }
-        }
-    ],
-    "compounds": [],
-    "version": "0.2.0"
+  "inputs": [
+    {
+      "id": "UI5MinVersion1.65.0",
+      "type": "command",
+      "command": "sap.ux.appGenerator.ui5Version",
+      "args": {
+        "minUI5Version": "1.65.0"
+      }
+    }
+  ],
+  "configurations": [
+    {
+      "name": "zworklistpo-config1",
+      "cwd": "${workspaceFolder}/zworklistpo",
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "args": [
+        "--open",
+        "index.html",
+        "--config",
+        "ui5-mock.yaml"
+      ],
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zworklistpo\"}",
+        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"S4H1709\",\"path\":\"/sap\"}]",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false&sap-ui-support=true"
+      }
+    },
+    {
+      "name": "Start bussinesspartner",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "cwd": "${workspaceFolder}/bussinesspartner",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#bpbussinesspartner-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/bussinesspartner\"}"
+      }
+    },
+    {
+      "name": "Start bussinesspartner Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/bussinesspartner",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#bpbussinesspartner-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/bussinesspartner\"}"
+      }
+    },
+    {
+      "name": "Start bussinesspartner Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/bussinesspartner",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#bpbussinesspartner-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/bussinesspartner\"}"
+      }
+    }
+  ],
+  "compounds": [],
+  "version": "0.2.0"
 }
